@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #101010;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.shadeBlack{
+    background-color: black;
+    position: absolute;
+    margin: 0%;
+    height: 5em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: 2px solid black;
+    box-shadow: -2px 5px 20px 2px black;
+}
+
+header{
+    background-color: #0066ff;
+    margin: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    position: relative;
+    margin: 0px;
+    top: 0.3em;
+    left: 0.5em;
+    font-size: 3em;
+    font-family: 'Poiret One', cursive;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    z-index: 1;
+    margin-left: 30em;
+    top: 2.8em;
+}
+
+nav .links{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-size: 1em;
+}
+
+.outerSection{
+    height: 30em;
+    width: 3em;
+    position: absolute;
+    margin: 0%;
+    z-index: -1;
+    border: 10px solid #0066ff;
+    background-color: #0066ff;
+    border-radius: 5em;
+}
+
+.outerSection::before{
+    content: '';
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    top: 0.9vh;
+    left: -3.1vw;
+    background-color: transparent;
+    border: 80px solid blue;
+    border-radius: 50%;
+    border-top-color: #0066ff;
+    border-left-color: #0066ff;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    z-index: 1;
+}
+
+.outerSection::after{
+    content: '';
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    top: 10vh;
+    left: -17vw;
+    background-color: transparent;
+    border: 100px solid blue;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-color: #0066ff;
+    border-right-color: #0066ff;
+    z-index: 1;
+}
+
+.innerSectionOne{
+    position: relative;
+    left: 2vw;
+    top: 25vh;
+    height: 100%;
+    width: 50%;
+    padding: 100px;
+}
+
+h2{
+    color: white;
+    font-size: 4em;
+    font-family: 'Poiret One', cursive;
+}
+
+.innerSectionTwo{
+    position: absolute;
+    right: 8vw;
+    top: 20vh;
+    perspective: 1000px;
+}
+
+.poster{
+    margin-right: 10em;
+    height: 500px;
+    width: 300px;
+    perspective: 2000px;
+    position: relative;
+    transform: rotateY(-20deg) rotateX(5deg);
+    transform-style: preserve-3d;
+}
+
+img{
+    height: 500px;
+}
